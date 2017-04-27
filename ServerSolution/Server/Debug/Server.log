@@ -1,3 +1,4 @@
 ﻿  main.cpp
-  Server.vcxproj -> C:\Users\Administrator\Desktop\ServerSolution\Debug\Server.exe
-  Server.vcxproj -> C:\Users\Administrator\Desktop\ServerSolution\Debug\Server.pdb (Partial PDB)
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(132): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(156): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(158): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::c_str': non-standard syntax; use '&' to create a pointer to member

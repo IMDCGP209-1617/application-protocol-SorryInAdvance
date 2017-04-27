@@ -26,7 +26,7 @@ const int MAX_CLIENTS = 5;
 const int MAX_ROOMS = 25;
 const int DEFAULT_BUFLEN = 512;
 
-std::vector<room_type> rooms(MAX_ROOMS);
+std::vector<room_type> rooms;
 std::vector<client_type> clients(MAX_CLIENTS);
 std::thread threads[MAX_CLIENTS];
 
@@ -128,16 +128,44 @@ int processClient(client_type &new_client, std::vector<client_type> &client_arra
 				{
 					if (sMessage.size() < 2) {
 						std::cout << "Open Rooms";
-						for each(room in current_room) {
-							if (room.isPrivate = false) {
-
+						std::string returnMsg = "Open Rooms: ";
+						for (int i = 0; i < rooms.size(); i++)
+						{
+							if (rooms[i].isPrivate == false) {
+								
+								returnMsg = returnMsg + rooms[i].roomname + ", ";
 							}
 						}
+						returnMsg = returnMsg + "\r\n";
+
+						result = send(client_array[new_client.id].socket,
+							returnMsg.c_str(),
+							strlen(returnMsg.c_str()), 0);
+						
+						}
+					else {
+						std::cout << "no username specified" << std::endl;
+					}
+					
 					}
 
 					else if (strcmp("/search", command.c_str()) == 0)
 					{
-						std::cout << "search";
+						if (sMessage.size() > 1) {
+							std::string returnMsg = "Matching Rooms: ";
+							for (int i = 0; i < rooms.size(); i++)
+							{
+								if (strcmp(sMessage[1].c_str(), rooms[i].roomname.c_str) == 0) {
+									returnMsg = returnMsg + rooms[i].roomname + ", ";
+								}			
+							
+							}
+							returnMsg = returnMsg + "\r\n";
+							result = send(client_array[new_client.id].socket,
+								returnMsg.c_str(),
+								strlen(returnMsg.c_str()), 0);
+						}
+							
 					}
 
 					else if (strcmp("/create", command.c_str()) == 0)
@@ -154,7 +182,7 @@ int processClient(client_type &new_client, std::vector<client_type> &client_arra
 								room.isPrivate = false;
 							}
 
-							current_room.push_back(room);
+							rooms.push_back(room);
 						}
 						else
 						{
@@ -306,7 +334,7 @@ int processClient(client_type &new_client, std::vector<client_type> &client_arra
 		thread.detach();
 		return 0;
 	}
-}
+
 int main() {
 
 	WORD wVersionRequested = MAKEWORD(2, 2);
