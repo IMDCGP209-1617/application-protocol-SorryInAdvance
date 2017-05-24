@@ -1,4 +1,24 @@
 ﻿  main.cpp
-c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(132): warning C4018: '<': signed/unsigned mismatch
-c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(156): warning C4018: '<': signed/unsigned mismatch
-c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(158): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::c_str': non-standard syntax; use '&' to create a pointer to member
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(141): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(165): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(201): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(222): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(246): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(249): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(280): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(299): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(332): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(336): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(339): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(390): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(394): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(397): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(452): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(457): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(498): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(501): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(507): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(550): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\documents\github\application-protocol-sorryinadvance\serversolution\server\main.cpp(594): warning C4018: '<': signed/unsigned mismatch
+  Server.vcxproj -> C:\Users\Administrator\Documents\GitHub\application-protocol-SorryInAdvance\ServerSolution\Debug\Server.exe
+  Server.vcxproj -> C:\Users\Administrator\Documents\GitHub\application-protocol-SorryInAdvance\ServerSolution\Debug\Server.pdb (Partial PDB)
